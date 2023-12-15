@@ -1,0 +1,67 @@
+2023-12-13 16:01:11.511512 [NOTICE] [T0] Your License key will expire in 14 days
+2023-12-13 16:01:11.511531 [NOTICE] [T0] Loading LiteSpeed/6.0.12 Enterprise ...
+2023-12-13 16:01:11.511536 [NOTICE] [T0] Using [BoringSSL]
+2023-12-13 16:01:11.513098 [NOTICE] [94] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7454
+2023-12-13 16:01:11.513136 [NOTICE] [94] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2023-12-13 16:01:11.513645 [NOTICE] [94] [T0] [*:80] Recovering server socket, fd: 9 
+2023-12-13 16:01:11.513674 [NOTICE] [94] [T0] [*:80] Recovering server socket, SO_REUSEPORT #2, fd: 10.
+2023-12-13 16:01:11.513684 [NOTICE] [94] [T0] [*:7080] Recovering server socket, fd: 11 
+2023-12-13 16:01:11.513719 [NOTICE] [94] [T0] [config] chroot is disabled.
+2023-12-13 16:01:11.513729 [INFO] [94] [T0] old priority: 0, new priority: 0
+2023-12-13 16:01:11.513756 [INFO] [94] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2023-12-13 16:01:11.515086 [INFO] [94] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2023-12-13 16:01:11.515098 [INFO] [94] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2023-12-13 16:01:11.515655 [NOTICE] [94] [T0] start cgid: 95, /usr/local/lsws/bin/lscgid
+2023-12-13 16:01:11.516351 [NOTICE] [94] [T0] start cgid: 96, /usr/local/lsws/bin/httpd
+2023-12-13 16:01:11.517978 [INFO] [94] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2023-12-13 16:01:11.518137 [INFO] [94] [T0] Add CloudFlare Subnets to trusted ACL ...
+2023-12-13 16:01:11.518837 [NOTICE] [94] [T0] The maximum number of file descriptor limit is set to 1048576.
+2023-12-13 16:01:11.520534 [NOTICE] [94] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2023-12-13 16:01:11.520559 [INFO] [94] [T0] [config:server:php] Try Litespeed PHP handlers
+2023-12-13 16:01:11.520600 [INFO] [94] [T0] Create PHP handler [lsphp81] with PHP binary [/usr/local/lsws/lsphp81/bin/lsphp]
+2023-12-13 16:01:11.520619 [INFO] [94] [T0] Add #1 suffix handler [lsphp81]->[lsphp81].
+2023-12-13 16:01:11.520624 [INFO] [94] [T0] Associate [php81] with PHP handler [lsphp81].
+2023-12-13 16:01:11.520632 [INFO] [94] [T0] Add #2 suffix handler [php81]->[lsphp81].
+2023-12-13 16:01:11.520639 [INFO] [94] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2023-12-13 16:01:11.520678 [INFO] [94] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php55,php73]
+2023-12-13 16:01:11.521555 [WARN] [94] [T0] [config:vhost:HelpDesk] Uid of /var/www/vhosts/laravel/ is smaller than minimum requirement 11, use server uid!
+2023-12-13 16:01:11.521564 [WARN] [94] [T0] [config:vhost:HelpDesk] Gid of /var/www/vhosts/laravel/ is smaller than minimum requirement 10, use server gid!
+2023-12-13 16:01:11.521568 [INFO] [94] [T0] [config:vhost:HelpDesk:logging] no separate logging set up.
+2023-12-13 16:01:11.523194 [NOTICE] [94] [T0] Litespeed is ready to serve...
+2023-12-13 16:01:11.523615 [NOTICE] [94] [T0] [AutoRestarter] new child process with pid=97 is forked!
+2023-12-13 16:01:11.524150 [NOTICE] [94] [T0] [AutoRestarter] new child process with pid=98 is forked!
+2023-12-13 16:01:11.524212 [NOTICE] [97] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 9
+2023-12-13 16:01:11.524856 [NOTICE] [98] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 10
+2023-12-13 16:01:11.524912 [INFO] [98] [T0] Stop listener *:7080.
+2023-12-13 16:01:11.601390 [NOTICE] [94] [T0] Memory size is: 972472KB.
+2023-12-13 16:01:11.524699 [NOTICE] [97] [T0] [Child: 97] Setup swapping space...
+2023-12-13 16:01:11.524754 [NOTICE] [97] [T0] Successfully change current user to nobody
+2023-12-13 16:01:11.524762 [NOTICE] [97] [T0] Core dump is enabled.
+2023-12-13 16:01:11.525058 [INFO] [97] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-13 16:01:11.525131 [INFO] [97] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-13 16:01:11.525192 [INFO] [97] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-13 16:01:11.525195 [ALERT] [97] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-13 16:01:11.525404 [NOTICE] [98] [T0] [Child: 98] Setup swapping space...
+2023-12-13 16:01:11.525453 [NOTICE] [98] [T0] Successfully change current user to nobody
+2023-12-13 16:01:11.525459 [NOTICE] [98] [T0] Core dump is enabled.
+2023-12-13 16:01:11.525745 [INFO] [98] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-13 16:01:11.525822 [INFO] [98] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-13 16:01:11.525891 [INFO] [98] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-13 16:01:11.525894 [ALERT] [98] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-13 16:01:12.027485 [INFO] [94] [T0] [LICENSE] License is OK.
+2023-12-13 16:01:14.098286 [INFO] [97] [T0] [88.0.104.1:51203:HTTP2-1#_AdminVHost] add child process pid: 114, procinfo: 0x1c04940
+2023-12-13 16:01:33.216465 [INFO] [98] [T0] [Laravel] add child process pid: 120, procinfo: 0x1c04870
+2023-12-13 16:01:41.027345 [INFO] [98] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Error Timeout, restart and try again!
+2023-12-13 16:01:41.027511 [INFO] [98] [T0] [88.0.104.1:51204#HelpDesk] connection to [/tmp/lshttpd/lsphp-example.sock] on request #0, confirmed, 0, associated process: 120, running: 1, error: No such file or directory!
+2023-12-13 16:01:41.027515 [INFO] [98] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Connection refused, restart!
+2023-12-13 16:01:41.027517 [NOTICE] [98] [T0] Graceful stop process group lead by pid: 120
+2023-12-13 16:01:41.027754 [NOTICE] [98] [T0] All pending requests are finished, stop process group lead by pid: 120
+2023-12-13 16:01:41.028406 [INFO] [98] [T0] [Laravel] add child process pid: 131, procinfo: 0x1bfb160
+2023-12-13 16:01:56.469724 [INFO] [97] [T0] [Laravel] add child process pid: 134, procinfo: 0x1c1b5c0
+2023-12-13 16:02:01.076866 [INFO] [97] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Error Timeout, restart and try again!
+2023-12-13 16:02:01.077039 [INFO] [97] [T0] [88.0.104.1:51205#HelpDesk] connection to [/tmp/lshttpd/lsphp-example.sock] on request #0, confirmed, 0, associated process: 134, running: 1, error: No such file or directory!
+2023-12-13 16:02:01.077043 [INFO] [97] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Connection refused, restart!
+2023-12-13 16:02:01.077044 [NOTICE] [97] [T0] Graceful stop process group lead by pid: 134
+2023-12-13 16:02:01.077221 [NOTICE] [97] [T0] All pending requests are finished, stop process group lead by pid: 134
+2023-12-13 16:02:01.077260 [INFO] [97] [T0] Process with PID: 114 is dead 
+2023-12-13 16:02:01.077818 [INFO] [97] [T0] [Laravel] add child process pid: 136, procinfo: 0x1c0e120

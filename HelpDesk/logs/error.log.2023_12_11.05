@@ -1,0 +1,94 @@
+2023-12-11 16:55:02.027710 [NOTICE] [T0] Your License key will expire in 14 days
+2023-12-11 16:55:02.027731 [NOTICE] [T0] Loading LiteSpeed/6.0.12 Enterprise ...
+2023-12-11 16:55:02.027736 [NOTICE] [T0] Using [BoringSSL]
+2023-12-11 16:55:02.029118 [NOTICE] [104] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7759
+2023-12-11 16:55:02.029154 [NOTICE] [104] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2023-12-11 16:55:02.029638 [NOTICE] [104] [T0] [*:80] Recovering server socket, fd: 9 
+2023-12-11 16:55:02.029672 [NOTICE] [104] [T0] [*:80] Recovering server socket, SO_REUSEPORT #2, fd: 10.
+2023-12-11 16:55:02.029684 [NOTICE] [104] [T0] [*:7080] Recovering server socket, fd: 11 
+2023-12-11 16:55:02.029718 [NOTICE] [104] [T0] [config] chroot is disabled.
+2023-12-11 16:55:02.029728 [INFO] [104] [T0] old priority: 0, new priority: 0
+2023-12-11 16:55:02.029757 [INFO] [104] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2023-12-11 16:55:02.030728 [INFO] [104] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2023-12-11 16:55:02.030739 [INFO] [104] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2023-12-11 16:55:02.031148 [NOTICE] [104] [T0] start cgid: 105, /usr/local/lsws/bin/lscgid
+2023-12-11 16:55:02.031654 [NOTICE] [104] [T0] start cgid: 106, /usr/local/lsws/bin/httpd
+2023-12-11 16:55:02.032140 [INFO] [104] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2023-12-11 16:55:02.032294 [INFO] [104] [T0] Add CloudFlare Subnets to trusted ACL ...
+2023-12-11 16:55:02.033139 [NOTICE] [104] [T0] The maximum number of file descriptor limit is set to 1048576.
+2023-12-11 16:55:02.034762 [NOTICE] [104] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2023-12-11 16:55:02.034794 [INFO] [104] [T0] [config:server:php] Try Litespeed PHP handlers
+2023-12-11 16:55:02.034841 [INFO] [104] [T0] Create PHP handler [lsphp81] with PHP binary [/usr/local/lsws/lsphp81/bin/lsphp]
+2023-12-11 16:55:02.034859 [INFO] [104] [T0] Add #1 suffix handler [lsphp81]->[lsphp81].
+2023-12-11 16:55:02.034864 [INFO] [104] [T0] Associate [php81] with PHP handler [lsphp81].
+2023-12-11 16:55:02.034872 [INFO] [104] [T0] Add #2 suffix handler [php81]->[lsphp81].
+2023-12-11 16:55:02.034879 [INFO] [104] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2023-12-11 16:55:02.034920 [INFO] [104] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php55,php73]
+2023-12-11 16:55:02.035518 [WARN] [104] [T0] [config:vhost:Laravel] Uid of /var/www/vhosts/laravel/public/ is smaller than minimum requirement 11, use server uid!
+2023-12-11 16:55:02.035526 [WARN] [104] [T0] [config:vhost:Laravel] Gid of /var/www/vhosts/laravel/public/ is smaller than minimum requirement 10, use server gid!
+2023-12-11 16:55:02.035530 [INFO] [104] [T0] [config:vhost:Laravel:logging] no separate logging set up.
+2023-12-11 16:55:02.036435 [NOTICE] [104] [T0] Litespeed is ready to serve...
+2023-12-11 16:55:02.036812 [NOTICE] [104] [T0] [AutoRestarter] new child process with pid=107 is forked!
+2023-12-11 16:55:02.037238 [NOTICE] [104] [T0] [AutoRestarter] new child process with pid=108 is forked!
+2023-12-11 16:55:02.037377 [NOTICE] [107] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 9
+2023-12-11 16:55:02.037891 [NOTICE] [108] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 10
+2023-12-11 16:55:02.037945 [INFO] [108] [T0] Stop listener *:7080.
+2023-12-11 16:55:02.101156 [NOTICE] [104] [T0] Memory size is: 972472KB.
+2023-12-11 16:55:02.582219 [INFO] [104] [T0] [LICENSE] License is OK.
+2023-12-11 16:55:02.037843 [NOTICE] [107] [T0] [Child: 107] Setup swapping space...
+2023-12-11 16:55:02.037897 [NOTICE] [107] [T0] Successfully change current user to nobody
+2023-12-11 16:55:02.037905 [NOTICE] [107] [T0] Core dump is enabled.
+2023-12-11 16:55:02.038205 [INFO] [107] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-11 16:55:02.038278 [INFO] [107] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-11 16:55:02.038344 [INFO] [107] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-11 16:55:02.038347 [ALERT] [107] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-11 16:55:02.038445 [NOTICE] [108] [T0] [Child: 108] Setup swapping space...
+2023-12-11 16:55:02.038510 [NOTICE] [108] [T0] Successfully change current user to nobody
+2023-12-11 16:55:02.038516 [NOTICE] [108] [T0] Core dump is enabled.
+2023-12-11 16:55:02.038749 [INFO] [108] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-11 16:55:02.038833 [INFO] [108] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-11 16:55:02.038897 [INFO] [108] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-11 16:55:02.038900 [ALERT] [108] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-11 16:55:04.464610 [INFO] [107] [T0] [88.0.104.1:51725:HTTP2-1#_AdminVHost] add child process pid: 126, procinfo: 0x1a63a80
+2023-12-11 16:55:12.170681 [INFO] [107] [T0] [88.0.104.1:51727#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:55:13.370015 [INFO] [107] [T0] [88.0.104.1:51727-1#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:55:13.941542 [INFO] [107] [T0] [88.0.104.1:51727-2#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:56:32.047442 [INFO] [107] [T0] Process with PID: 126 is dead 
+2023-12-11 16:56:40.263191 [INFO] [107] [T0] [88.0.104.1:51730#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:56:43.455235 [INFO] [107] [T0] [88.0.104.1:51730-1#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:57:14.287432 [INFO] [107] [T0] [88.0.104.1:51729#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:57:34.622458 [INFO] [107] [T0] [88.0.104.1:51737:HTTP2-1#_AdminVHost] add child process pid: 169, procinfo: 0x1a63a80
+2023-12-11 16:58:12.096155 [INFO] [107] [T0] Process with PID: 169 is dead 
+2023-12-11 16:58:35.540334 [INFO] [107] [T0] [88.0.104.1:51737:HTTP2-5#_AdminVHost] add child process pid: 185, procinfo: 0x1a63a80
+2023-12-11 16:58:41.267505 [INFO] [108] [T0] [88.0.104.1:51741#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:58:43.287240 [INFO] [108] [T0] [88.0.104.1:51741-1#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:58:43.703472 [INFO] [108] [T0] [88.0.104.1:51741-2#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:58:43.958477 [INFO] [108] [T0] [88.0.104.1:51741-3#Laravel] Index file is not available in [/var/www/vhosts/laravel/public/]
+2023-12-11 16:58:48.872746 [NOTICE] [104] [T0] Server restart request from admin interface!
+2023-12-11 16:58:48.873681 [INFO] [104] [T0] Stop all listeners.
+2023-12-11 16:58:48.873740 [INFO] [104] [T0] Stop listener *:80.
+2023-12-11 16:58:48.873772 [INFO] [104] [T0] Stop listener *:7080.
+2023-12-11 16:58:48.873797 [NOTICE] [104] [T0] Stop all children workers, nowait=0
+2023-12-11 16:58:48.874175 [NOTICE] [104] [T0] Forked [192] for graceful restart.
+2023-12-11 16:58:48.874233 [NOTICE] [104] [T0] Start passing listener sockets through forked child [192].
+2023-12-11 16:58:48.874257 [INFO] [192] [T0] [*:7080] Pass listener, copy fd 11 to 1002.
+2023-12-11 16:58:48.874277 [INFO] [192] [T0] [TCP *:80], SO_REUSEPORT #1, pass listener copy fd 10 to 1001.
+2023-12-11 16:58:48.874285 [INFO] [192] [T0] [TCP *:80], SO_REUSEPORT #2, pass listener copy fd 9 to 1000.
+2023-12-11 16:58:48.874302 [NOTICE] [192] [T0] Starting new instance: execute '/usr/local/lsws/bin/litespeed'.
+2023-12-11 16:58:48.873094 [NOTICE] [107] [T0] killed by SIGINT!
+2023-12-11 16:58:48.873102 [NOTICE] [107] [T0] Start shutting down gracefully ...
+2023-12-11 16:58:48.873135 [NOTICE] [107] [T0] Event-loop lingering start.
+2023-12-11 16:58:48.872945 [NOTICE] [108] [T0] killed by SIGINT!
+2023-12-11 16:58:48.872953 [NOTICE] [108] [T0] Start shutting down gracefully ...
+2023-12-11 16:58:48.872988 [NOTICE] [108] [T0] Event-loop lingering start.
+2023-12-11 16:58:49.279678 [NOTICE] [104] [T0] [AutoRestarter] cleanup children processes and unix sockets of process with pid=108 !
+2023-12-11 16:58:49.279705 [NOTICE] [104] [T0] [AutoRestarter] child process with pid=108 exited with status=0!
+2023-12-11 16:58:49.279733 [NOTICE] [104] [T0] Main process [104] detects new litespeed process is ready, stop child process in 300 seconds.
+2023-12-11 16:58:49.306219 [NOTICE] [107] [T0] New litespeed process is ready, stops listeners
+2023-12-11 16:58:49.306229 [INFO] [107] [T0] Stop all listeners.
+2023-12-11 16:58:49.306232 [INFO] [107] [T0] Stop listener *:80.
+2023-12-11 16:58:49.306244 [INFO] [107] [T0] Stop listener *:7080.
+2023-12-11 16:58:49.306248 [NOTICE] [107] [T0] QuicEngine::startCoolDown(), active connections: 0
+2023-12-11 16:58:50.515960 [NOTICE] [104] [T0] [AutoRestarter] cleanup children processes and unix sockets of process with pid=107 !
+2023-12-11 16:58:50.516042 [NOTICE] [104] [T0] [AutoRestarter] child process with pid=107 exited with status=0!
+2023-12-11 16:58:50.516090 [NOTICE] [104] [T0] Main server stopped!

@@ -1,0 +1,14 @@
+2023-12-02 07:51:42.314 [STDERR] sh: 1: mailx: not found
+2023-12-02 09:26:48.447 [STDERR] sh: 1: mailx: not found
+2023-12-02 10:27:34.501 [STDERR] sh: 1: mailx: not found
+2023-12-11 13:39:16.753 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2023-12-11 13:39:23.697 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2023-12-11 13:48:47.277 [STDERR] sh: 1: mailx: not found
+2023-12-11 16:29:59.299 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2023-12-11 16:36:59.261 [STDERR] sh: 1: /usr/sbin/sendmail: not found
+2023-12-11 17:14:06.280 [STDERR] sh: 1: mailx: not found
+2023-12-12 20:27:06.308 [STDERR] sh: 1: mailx: not found
+2023-12-12 23:16:18.323 [STDERR] sh: 1: mailx: not found
+2023-12-13 13:53:02.313 [STDERR] sh: 1: mailx: not found
+2023-12-14 22:17:21.296 [STDERR] sh: 1: mailx: not found
+2023-12-15 00:37:08.301 [STDERR] sh: 1: mailx: not found

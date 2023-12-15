@@ -1,0 +1,80 @@
+2023-12-15 00:44:03.126730 [NOTICE] [T0] Your License key will expire in 14 days
+2023-12-15 00:44:03.126749 [NOTICE] [T0] Loading LiteSpeed/6.0.12 Enterprise ...
+2023-12-15 00:44:03.126755 [NOTICE] [T0] Using [BoringSSL]
+2023-12-15 00:44:03.129847 [NOTICE] [29] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7196
+2023-12-15 00:44:03.129911 [NOTICE] [29] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2023-12-15 00:44:03.130665 [NOTICE] [29] [T0] [config] chroot is disabled.
+2023-12-15 00:44:03.131250 [INFO] [29] [T0] old priority: 0, new priority: 0
+2023-12-15 00:44:03.131327 [INFO] [29] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2023-12-15 00:44:03.134358 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2023-12-15 00:44:03.134374 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2023-12-15 00:44:03.137258 [NOTICE] [29] [T0] start cgid: 32, /usr/local/lsws/bin/lscgid
+2023-12-15 00:44:03.137925 [NOTICE] [29] [T0] start cgid: 34, /usr/local/lsws/bin/httpd
+2023-12-15 00:44:03.138450 [INFO] [29] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2023-12-15 00:44:03.725726 [INFO] [29] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2023-12-15 00:44:03.726237 [INFO] [29] [T0] Add CloudFlare Subnets to trusted ACL ...
+2023-12-15 00:44:03.728391 [NOTICE] [29] [T0] [*:80] Add SO_REUSEPORT sockets, from #1 to #2
+2023-12-15 00:44:03.728456 [NOTICE] [29] [T0] The maximum number of file descriptor limit is set to 1048576.
+2023-12-15 00:44:03.734395 [NOTICE] [29] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2023-12-15 00:44:03.734448 [INFO] [29] [T0] [config:server:php] Try Litespeed PHP handlers
+2023-12-15 00:44:03.735290 [INFO] [29] [T0] Create PHP handler [lsphp81] with PHP binary [/usr/local/lsws/lsphp81/bin/lsphp]
+2023-12-15 00:44:03.735351 [INFO] [29] [T0] Add #1 suffix handler [lsphp81]->[lsphp81].
+2023-12-15 00:44:03.735359 [INFO] [29] [T0] Associate [php81] with PHP handler [lsphp81].
+2023-12-15 00:44:03.735383 [INFO] [29] [T0] Add #2 suffix handler [php81]->[lsphp81].
+2023-12-15 00:44:03.735435 [INFO] [29] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2023-12-15 00:44:03.737819 [INFO] [29] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php55,php73]
+2023-12-15 00:44:03.739519 [WARN] [29] [T0] [config:vhost:HelpDesk] Uid of /var/www/vhosts/laravel/ is smaller than minimum requirement 11, use server uid!
+2023-12-15 00:44:03.739531 [WARN] [29] [T0] [config:vhost:HelpDesk] Gid of /var/www/vhosts/laravel/ is smaller than minimum requirement 10, use server gid!
+2023-12-15 00:44:03.739536 [INFO] [29] [T0] [config:vhost:HelpDesk:logging] no separate logging set up.
+2023-12-15 00:44:03.741351 [NOTICE] [29] [T0] Litespeed is ready to serve...
+2023-12-15 00:44:03.742341 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=35 is forked!
+2023-12-15 00:44:03.742770 [NOTICE] [35] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 26
+2023-12-15 00:44:03.743436 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=36 is forked!
+2023-12-15 00:44:03.744295 [NOTICE] [36] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 27
+2023-12-15 00:44:03.744357 [INFO] [36] [T0] Stop listener *:7080.
+2023-12-15 00:44:03.743234 [NOTICE] [35] [T0] [Child: 35] Setup swapping space...
+2023-12-15 00:44:03.743302 [NOTICE] [35] [T0] Successfully change current user to nobody
+2023-12-15 00:44:03.743310 [NOTICE] [35] [T0] Core dump is enabled.
+2023-12-15 00:44:03.743603 [INFO] [35] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-15 00:44:03.743682 [INFO] [35] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-15 00:44:03.743752 [INFO] [35] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-15 00:44:03.743755 [ALERT] [35] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-15 00:44:03.744787 [NOTICE] [36] [T0] [Child: 36] Setup swapping space...
+2023-12-15 00:44:03.744978 [NOTICE] [36] [T0] Successfully change current user to nobody
+2023-12-15 00:44:03.744988 [NOTICE] [36] [T0] Core dump is enabled.
+2023-12-15 00:44:03.745272 [INFO] [36] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-15 00:44:03.745349 [INFO] [36] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-15 00:44:03.745425 [INFO] [36] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-15 00:44:03.745428 [ALERT] [36] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-15 00:44:04.191503 [INFO] [29] [T0] [LICENSE] License is OK.
+2023-12-15 00:44:08.476574 [INFO] [35] [T0] [Laravel] add child process pid: 60, procinfo: 0x25954b0
+2023-12-15 00:44:13.083144 [INFO] [35] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Error Timeout, restart and try again!
+2023-12-15 00:44:13.083319 [INFO] [35] [T0] [88.0.104.1:54014#HelpDesk] connection to [/tmp/lshttpd/lsphp-example.sock] on request #0, confirmed, 0, associated process: 60, running: 1, error: No such file or directory!
+2023-12-15 00:44:13.083323 [INFO] [35] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Connection refused, restart!
+2023-12-15 00:44:13.083325 [NOTICE] [35] [T0] Graceful stop process group lead by pid: 60
+2023-12-15 00:44:13.083550 [NOTICE] [35] [T0] All pending requests are finished, stop process group lead by pid: 60
+2023-12-15 00:44:13.084196 [INFO] [35] [T0] [Laravel] add child process pid: 62, procinfo: 0x258f680
+2023-12-15 00:44:22.428611 [INFO] [36] [T0] [Laravel] add child process pid: 65, procinfo: 0x25974b0
+2023-12-15 00:44:23.029645 [INFO] [36] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Error Timeout, restart and try again!
+2023-12-15 00:44:23.029816 [INFO] [36] [T0] [88.0.104.1:54016#HelpDesk] connection to [/tmp/lshttpd/lsphp-example.sock] on request #0, confirmed, 0, associated process: 65, running: 1, error: No such file or directory!
+2023-12-15 00:44:23.029821 [INFO] [36] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Connection refused, restart!
+2023-12-15 00:44:23.029823 [NOTICE] [36] [T0] Graceful stop process group lead by pid: 65
+2023-12-15 00:44:23.030069 [NOTICE] [36] [T0] All pending requests are finished, stop process group lead by pid: 65
+2023-12-15 00:44:23.030692 [INFO] [36] [T0] [Laravel] add child process pid: 67, procinfo: 0x2595800
+2023-12-15 00:44:30.480942 [INFO] [35] [T0] [88.0.104.1:54020-1#HelpDesk] File not found [/var/www/vhosts/laravel/vistas/perfil/home.js] 
+2023-12-15 00:44:45.600764 [NOTICE] [35] [T0] [88.0.104.1:54023#HelpDesk] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/logout/logout.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/logout/logout.php on line 7\n
+2023-12-15 00:49:00.117598 [INFO] [35] [T0] [87.236.176.88:49655#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.png] 
+2023-12-15 00:49:00.117768 [INFO] [35] [T0] [87.236.176.43:42525#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.ico] 
+2023-12-15 00:49:00.118438 [INFO] [35] [T0] [87.236.176.93:38909#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.144x144.png] 
+2023-12-15 00:49:00.120008 [INFO] [35] [T0] [87.236.176.172:43327#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.114x114.png] 
+2023-12-15 00:49:00.123342 [INFO] [35] [T0] [87.236.176.42:47625#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.72x72.png] 
+2023-12-15 00:49:00.516298 [INFO] [35] [T0] [142.93.191.98:60161#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.114x114.png] 
+2023-12-15 00:49:00.126424 [INFO] [36] [T0] [87.236.176.175:47555#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.57x57.png] 
+2023-12-15 00:49:00.220747 [INFO] [36] [T0] [104.248.204.195:45109#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.144x144.png] 
+2023-12-15 00:49:00.463610 [INFO] [36] [T0] [185.7.33.146:34666#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.144x144.png] 
+2023-12-15 00:49:00.512327 [INFO] [36] [T0] [209.97.152.248:36251#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.png] 
+2023-12-15 00:49:00.513772 [INFO] [36] [T0] [165.22.39.64:38667#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.ico] 
+2023-12-15 00:49:00.519317 [INFO] [36] [T0] [209.97.152.248:47793#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.72x72.png] 
+2023-12-15 00:49:00.521515 [INFO] [36] [T0] [209.97.152.248:43907#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.57x57.png] 
+2023-12-15 00:49:11.078198 [INFO] [36] [T0] [107.189.10.175:29948#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.57x57.png] 
+2023-12-15 00:49:11.849500 [INFO] [36] [T0] [45.15.158.39:52700#HelpDesk] File not found [/var/www/vhosts/laravel/public/img/favicon.png] 

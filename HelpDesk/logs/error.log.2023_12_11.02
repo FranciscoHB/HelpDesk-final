@@ -1,0 +1,51 @@
+2023-12-11 16:36:50.228497 [NOTICE] [T0] Your License key will expire in 14 days
+2023-12-11 16:36:50.228538 [NOTICE] [T0] Loading LiteSpeed/6.0.12 Enterprise ...
+2023-12-11 16:36:50.228543 [NOTICE] [T0] Using [BoringSSL]
+2023-12-11 16:36:50.230579 [NOTICE] [28] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7553
+2023-12-11 16:36:50.230629 [NOTICE] [28] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2023-12-11 16:36:50.231376 [NOTICE] [28] [T0] [config] chroot is disabled.
+2023-12-11 16:36:50.231397 [INFO] [28] [T0] old priority: 0, new priority: 0
+2023-12-11 16:36:50.231439 [INFO] [28] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2023-12-11 16:36:50.234102 [INFO] [28] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2023-12-11 16:36:50.234113 [INFO] [28] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2023-12-11 16:36:50.235321 [NOTICE] [28] [T0] start cgid: 32, /usr/local/lsws/bin/lscgid
+2023-12-11 16:36:50.236055 [NOTICE] [28] [T0] start cgid: 33, /usr/local/lsws/bin/httpd
+2023-12-11 16:36:50.240540 [INFO] [28] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2023-12-11 16:36:50.240792 [INFO] [28] [T0] Add CloudFlare Subnets to trusted ACL ...
+2023-12-11 16:36:50.241866 [NOTICE] [28] [T0] [*:80] Add SO_REUSEPORT sockets, from #1 to #2
+2023-12-11 16:36:50.241909 [NOTICE] [28] [T0] The maximum number of file descriptor limit is set to 1048576.
+2023-12-11 16:36:50.244772 [NOTICE] [28] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2023-12-11 16:36:50.244806 [INFO] [28] [T0] [config:server:php] Try Litespeed PHP handlers
+2023-12-11 16:36:50.245098 [INFO] [28] [T0] Create PHP handler [lsphp81] with PHP binary [/usr/local/lsws/lsphp81/bin/lsphp]
+2023-12-11 16:36:50.245123 [INFO] [28] [T0] Add #1 suffix handler [lsphp81]->[lsphp81].
+2023-12-11 16:36:50.245128 [INFO] [28] [T0] Associate [php81] with PHP handler [lsphp81].
+2023-12-11 16:36:50.245137 [INFO] [28] [T0] Add #2 suffix handler [php81]->[lsphp81].
+2023-12-11 16:36:50.245160 [INFO] [28] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2023-12-11 16:36:50.245530 [INFO] [28] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php55,php73]
+2023-12-11 16:36:50.247359 [WARN] [28] [T0] [config:vhost:Laravel] Uid of /var/www/vhosts/laravel/public/ is smaller than minimum requirement 11, use server uid!
+2023-12-11 16:36:50.247370 [WARN] [28] [T0] [config:vhost:Laravel] Gid of /var/www/vhosts/laravel/public/ is smaller than minimum requirement 10, use server gid!
+2023-12-11 16:36:50.247375 [INFO] [28] [T0] [config:vhost:Laravel:logging] no separate logging set up.
+2023-12-11 16:36:50.249228 [NOTICE] [28] [T0] Litespeed is ready to serve...
+2023-12-11 16:36:50.249665 [NOTICE] [28] [T0] [AutoRestarter] new child process with pid=34 is forked!
+2023-12-11 16:36:50.250228 [NOTICE] [34] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 26
+2023-12-11 16:36:50.250298 [NOTICE] [28] [T0] [AutoRestarter] new child process with pid=35 is forked!
+2023-12-11 16:36:50.251338 [NOTICE] [35] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 27
+2023-12-11 16:36:50.251373 [INFO] [35] [T0] Stop listener *:7080.
+2023-12-11 16:36:50.720632 [INFO] [28] [T0] [LICENSE] License is OK.
+2023-12-11 16:36:50.250658 [NOTICE] [34] [T0] [Child: 34] Setup swapping space...
+2023-12-11 16:36:50.250723 [NOTICE] [34] [T0] Successfully change current user to nobody
+2023-12-11 16:36:50.250731 [NOTICE] [34] [T0] Core dump is enabled.
+2023-12-11 16:36:50.251022 [INFO] [34] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-11 16:36:50.251098 [INFO] [34] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-11 16:36:50.251154 [INFO] [34] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-11 16:36:50.251156 [ALERT] [34] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-11 16:36:50.251969 [NOTICE] [35] [T0] [Child: 35] Setup swapping space...
+2023-12-11 16:36:50.252104 [NOTICE] [35] [T0] Successfully change current user to nobody
+2023-12-11 16:36:50.252111 [NOTICE] [35] [T0] Core dump is enabled.
+2023-12-11 16:36:50.252564 [INFO] [35] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-11 16:36:50.252705 [INFO] [35] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-11 16:36:50.252811 [INFO] [35] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-11 16:36:50.252814 [ALERT] [35] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-11 16:36:52.197083 [INFO] [34] [T0] [88.0.104.1:51697:HTTP2-1#_AdminVHost] add child process pid: 49, procinfo: 0x29e1050
+2023-12-11 16:36:59.243032 [NOTICE] [34] [T0] [88.0.104.1:51697:HTTP2-13#_AdminVHost] [STDERR] [WebAdmin Console] Failed Login Attempt - username: admin ip: 88.0.104.1 url: https://34.163.164.189:7080/login.php\n
+2023-12-11 16:37:50.014301 [INFO] [34] [T0] Process with PID: 49 is dead 

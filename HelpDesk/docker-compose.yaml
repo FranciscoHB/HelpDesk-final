@@ -1,0 +1,71 @@
+version: '3.4'
+
+services:
+
+  frontend:
+
+    container_name: frontend-ubuntu
+
+    image: ubuntu:22.04
+
+    command: >
+      /bin/bash -c "mkdir -p /home/ubuntu/src && tail -f /dev/null"
+
+    restart: always
+
+    volumes:
+        - ./src:/home/ubuntu/src
+
+    links:
+        - litespeed:litespeed
+
+  litespeed:
+
+    container_name: litespeed-6.0.12-lsphp81
+
+    build: ./docker-customs/lsws/template
+
+    volumes:
+        - ./src:/var/www/vhosts/laravel
+        - ./lsws/conf:/usr/local/lsws/conf
+        - ./lsws/admin/conf:/usr/local/lsws/admin/conf
+        - ./logs:/usr/local/lsws/logs/
+    ports:
+      - 80:80
+      - 443:443
+      - 7080:7080
+    restart: always
+    links:
+      - mysql:mysql
+
+  mysql:
+
+    container_name: mysql
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+        - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+        - MYSQL_DATABASE=${MYSQL_DATABASE}
+        - MYSQL_USER=${MYSQL_USER}
+        - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+        - LANG=C.UTF-8
+    volumes:
+        - mysql_data:/var/lib/mysql
+        - ./db:/docker-entrypoint-initdb.d
+    ports:
+      - 3306:3306
+    restart: always
+
+  phpmyadmin:
+
+    image: phpmyadmin:5.1
+    environment:
+        - PMA_ARBITRARY=1
+    ports:
+        - 8080:80
+    links:
+      - mysql:mysql
+    restart: always
+
+volumes:
+    mysql_data:

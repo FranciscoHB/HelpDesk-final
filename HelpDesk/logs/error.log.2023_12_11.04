@@ -1,0 +1,74 @@
+2023-12-11 16:52:59.138867 [NOTICE] [T0] Your License key will expire in 14 days
+2023-12-11 16:52:59.138888 [NOTICE] [T0] Loading LiteSpeed/6.0.12 Enterprise ...
+2023-12-11 16:52:59.138893 [NOTICE] [T0] Using [BoringSSL]
+2023-12-11 16:52:59.140908 [NOTICE] [29] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7330
+2023-12-11 16:52:59.140957 [NOTICE] [29] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2023-12-11 16:52:59.141764 [NOTICE] [29] [T0] [config] chroot is disabled.
+2023-12-11 16:52:59.141786 [INFO] [29] [T0] old priority: 0, new priority: 0
+2023-12-11 16:52:59.141853 [INFO] [29] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2023-12-11 16:52:59.144089 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2023-12-11 16:52:59.144101 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2023-12-11 16:52:59.144839 [NOTICE] [29] [T0] start cgid: 33, /usr/local/lsws/bin/lscgid
+2023-12-11 16:52:59.145550 [NOTICE] [29] [T0] start cgid: 34, /usr/local/lsws/bin/httpd
+2023-12-11 16:52:59.147752 [INFO] [29] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2023-12-11 16:52:59.147946 [INFO] [29] [T0] Add CloudFlare Subnets to trusted ACL ...
+2023-12-11 16:52:59.148829 [NOTICE] [29] [T0] [*:80] Add SO_REUSEPORT sockets, from #1 to #2
+2023-12-11 16:52:59.148870 [NOTICE] [29] [T0] The maximum number of file descriptor limit is set to 1048576.
+2023-12-11 16:52:59.150765 [NOTICE] [29] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2023-12-11 16:52:59.150793 [INFO] [29] [T0] [config:server:php] Try Litespeed PHP handlers
+2023-12-11 16:52:59.150921 [INFO] [29] [T0] Create PHP handler [lsphp81] with PHP binary [/usr/local/lsws/lsphp81/bin/lsphp]
+2023-12-11 16:52:59.150944 [INFO] [29] [T0] Add #1 suffix handler [lsphp81]->[lsphp81].
+2023-12-11 16:52:59.150949 [INFO] [29] [T0] Associate [php81] with PHP handler [lsphp81].
+2023-12-11 16:52:59.150959 [INFO] [29] [T0] Add #2 suffix handler [php81]->[lsphp81].
+2023-12-11 16:52:59.150972 [INFO] [29] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2023-12-11 16:52:59.151045 [INFO] [29] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php55,php73]
+2023-12-11 16:52:59.152095 [ERROR] [29] [T0] [/var/www/vhosts/laravel/vhconf.xml:1] not well-formed (invalid token) 
+2023-12-11 16:52:59.152103 [ERROR] [29] [T0] [config:server:vhosts] cannot load configure file - /var/www/vhosts/laravel/vhconf.xml !
+2023-12-11 16:52:59.153651 [NOTICE] [29] [T0] Litespeed is ready to serve...
+2023-12-11 16:52:59.154102 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=35 is forked!
+2023-12-11 16:52:59.154660 [NOTICE] [35] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 26
+2023-12-11 16:52:59.154693 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=36 is forked!
+2023-12-11 16:52:59.155661 [NOTICE] [36] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 27
+2023-12-11 16:52:59.155705 [INFO] [36] [T0] Stop listener *:7080.
+2023-12-11 16:52:59.583247 [INFO] [29] [T0] [LICENSE] License is OK.
+2023-12-11 16:52:59.155146 [NOTICE] [35] [T0] [Child: 35] Setup swapping space...
+2023-12-11 16:52:59.155213 [NOTICE] [35] [T0] Successfully change current user to nobody
+2023-12-11 16:52:59.155222 [NOTICE] [35] [T0] Core dump is enabled.
+2023-12-11 16:52:59.155607 [INFO] [35] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-11 16:52:59.155695 [INFO] [35] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-11 16:52:59.155775 [INFO] [35] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-11 16:52:59.155778 [ALERT] [35] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-11 16:52:59.156208 [NOTICE] [36] [T0] [Child: 36] Setup swapping space...
+2023-12-11 16:52:59.156353 [NOTICE] [36] [T0] Successfully change current user to nobody
+2023-12-11 16:52:59.156359 [NOTICE] [36] [T0] Core dump is enabled.
+2023-12-11 16:52:59.156705 [INFO] [36] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-11 16:52:59.156792 [INFO] [36] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-11 16:52:59.156875 [INFO] [36] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-11 16:52:59.156878 [ALERT] [36] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-11 16:53:01.845033 [INFO] [35] [T0] [88.0.104.1:51716:HTTP2-1#_AdminVHost] add child process pid: 60, procinfo: 0x2af6f70
+2023-12-11 16:53:26.509714 [NOTICE] [35] [T0] [88.0.104.1:51716:HTTP2-45#_AdminVHost] [STDERR] XML error: not well-formed (invalid token) at line 1<br> Failed to parse file /var/www/vhosts/laravel/vhconf.xml\n
+2023-12-11 16:53:59.003779 [INFO] [35] [T0] Process with PID: 60 is dead 
+2023-12-11 16:54:30.767390 [INFO] [35] [T0] [88.0.104.1:51723:HTTP2-1#_AdminVHost] add child process pid: 81, procinfo: 0x2af6f70
+2023-12-11 16:55:01.684666 [NOTICE] [29] [T0] Server restart request from admin interface!
+2023-12-11 16:55:01.685621 [INFO] [29] [T0] Stop all listeners.
+2023-12-11 16:55:01.685676 [INFO] [29] [T0] Stop listener *:80.
+2023-12-11 16:55:01.685693 [INFO] [29] [T0] Stop listener *:7080.
+2023-12-11 16:55:01.685718 [NOTICE] [29] [T0] Stop all children workers, nowait=0
+2023-12-11 16:55:01.685900 [NOTICE] [29] [T0] Forked [102] for graceful restart.
+2023-12-11 16:55:01.685947 [NOTICE] [29] [T0] Start passing listener sockets through forked child [102].
+2023-12-11 16:55:01.685966 [INFO] [102] [T0] [*:7080] Pass listener, copy fd 25 to 1002.
+2023-12-11 16:55:01.685986 [INFO] [102] [T0] [TCP *:80], SO_REUSEPORT #1, pass listener copy fd 27 to 1001.
+2023-12-11 16:55:01.685994 [INFO] [102] [T0] [TCP *:80], SO_REUSEPORT #2, pass listener copy fd 26 to 1000.
+2023-12-11 16:55:01.686012 [NOTICE] [102] [T0] Starting new instance: execute '/usr/local/lsws/bin/litespeed'.
+2023-12-11 16:55:01.684933 [NOTICE] [35] [T0] killed by SIGINT!
+2023-12-11 16:55:01.684937 [NOTICE] [35] [T0] Start shutting down gracefully ...
+2023-12-11 16:55:01.684967 [NOTICE] [35] [T0] Event-loop lingering start.
+2023-12-11 16:55:01.684860 [NOTICE] [36] [T0] killed by SIGINT!
+2023-12-11 16:55:01.684870 [NOTICE] [36] [T0] Start shutting down gracefully ...
+2023-12-11 16:55:01.684906 [NOTICE] [36] [T0] Event-loop lingering start.
+2023-12-11 16:55:02.090224 [NOTICE] [29] [T0] [AutoRestarter] cleanup children processes and unix sockets of process with pid=36 !
+2023-12-11 16:55:02.090242 [NOTICE] [29] [T0] [AutoRestarter] child process with pid=36 exited with status=0!
+2023-12-11 16:55:02.090266 [NOTICE] [29] [T0] Main process [29] detects new litespeed process is ready, stop child process in 300 seconds.
+2023-12-11 16:55:03.787259 [NOTICE] [29] [T0] [AutoRestarter] cleanup children processes and unix sockets of process with pid=35 !
+2023-12-11 16:55:03.787351 [NOTICE] [29] [T0] [AutoRestarter] child process with pid=35 exited with status=0!
+2023-12-11 16:55:03.787404 [NOTICE] [29] [T0] Main server stopped!

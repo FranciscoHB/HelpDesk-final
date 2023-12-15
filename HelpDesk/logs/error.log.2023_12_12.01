@@ -1,0 +1,60 @@
+2023-12-12 17:20:52.128227 [NOTICE] [T0] Your License key will expire in 14 days
+2023-12-12 17:20:52.128242 [NOTICE] [T0] Loading LiteSpeed/6.0.12 Enterprise ...
+2023-12-12 17:20:52.128246 [NOTICE] [T0] Using [BoringSSL]
+2023-12-12 17:20:52.131596 [NOTICE] [29] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7010
+2023-12-12 17:20:52.131645 [NOTICE] [29] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2023-12-12 17:20:52.132396 [NOTICE] [29] [T0] [config] chroot is disabled.
+2023-12-12 17:20:52.132419 [INFO] [29] [T0] old priority: 0, new priority: 0
+2023-12-12 17:20:52.132460 [INFO] [29] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2023-12-12 17:20:52.134300 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2023-12-12 17:20:52.134313 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2023-12-12 17:20:52.134923 [NOTICE] [29] [T0] start cgid: 33, /usr/local/lsws/bin/lscgid
+2023-12-12 17:20:52.135527 [NOTICE] [29] [T0] start cgid: 34, /usr/local/lsws/bin/httpd
+2023-12-12 17:20:52.135964 [INFO] [29] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2023-12-12 17:20:52.709729 [INFO] [29] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2023-12-12 17:20:52.709839 [INFO] [29] [T0] Add CloudFlare Subnets to trusted ACL ...
+2023-12-12 17:20:52.710896 [NOTICE] [29] [T0] [*:80] Add SO_REUSEPORT sockets, from #1 to #2
+2023-12-12 17:20:52.710940 [NOTICE] [29] [T0] The maximum number of file descriptor limit is set to 1048576.
+2023-12-12 17:20:52.713215 [NOTICE] [29] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2023-12-12 17:20:52.713246 [INFO] [29] [T0] [config:server:php] Try Litespeed PHP handlers
+2023-12-12 17:20:52.713463 [INFO] [29] [T0] Create PHP handler [lsphp81] with PHP binary [/usr/local/lsws/lsphp81/bin/lsphp]
+2023-12-12 17:20:52.713488 [INFO] [29] [T0] Add #1 suffix handler [lsphp81]->[lsphp81].
+2023-12-12 17:20:52.713493 [INFO] [29] [T0] Associate [php81] with PHP handler [lsphp81].
+2023-12-12 17:20:52.713501 [INFO] [29] [T0] Add #2 suffix handler [php81]->[lsphp81].
+2023-12-12 17:20:52.713521 [INFO] [29] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2023-12-12 17:20:52.713607 [INFO] [29] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php55,php73]
+2023-12-12 17:20:52.715295 [WARN] [29] [T0] [config:vhost:Laravel] Uid of /var/www/vhosts/laravel/ is smaller than minimum requirement 11, use server uid!
+2023-12-12 17:20:52.715310 [WARN] [29] [T0] [config:vhost:Laravel] Gid of /var/www/vhosts/laravel/ is smaller than minimum requirement 10, use server gid!
+2023-12-12 17:20:52.715315 [INFO] [29] [T0] [config:vhost:Laravel:logging] no separate logging set up.
+2023-12-12 17:20:52.717121 [NOTICE] [29] [T0] Litespeed is ready to serve...
+2023-12-12 17:20:52.717631 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=35 is forked!
+2023-12-12 17:20:52.718205 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=36 is forked!
+2023-12-12 17:20:52.718282 [NOTICE] [35] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 26
+2023-12-12 17:20:52.718918 [NOTICE] [36] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 27
+2023-12-12 17:20:52.718975 [INFO] [36] [T0] Stop listener *:7080.
+2023-12-12 17:20:52.718772 [NOTICE] [35] [T0] [Child: 35] Setup swapping space...
+2023-12-12 17:20:52.718852 [NOTICE] [35] [T0] Successfully change current user to nobody
+2023-12-12 17:20:52.718863 [NOTICE] [35] [T0] Core dump is enabled.
+2023-12-12 17:20:52.719159 [INFO] [35] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-12 17:20:52.719236 [INFO] [35] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-12 17:20:52.719396 [INFO] [35] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-12 17:20:52.719400 [ALERT] [35] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-12 17:20:52.719423 [NOTICE] [36] [T0] [Child: 36] Setup swapping space...
+2023-12-12 17:20:52.719597 [NOTICE] [36] [T0] Successfully change current user to nobody
+2023-12-12 17:20:52.719605 [NOTICE] [36] [T0] Core dump is enabled.
+2023-12-12 17:20:52.719872 [INFO] [36] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-12 17:20:52.719952 [INFO] [36] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-12 17:20:52.720023 [INFO] [36] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-12 17:20:52.720031 [ALERT] [36] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-12 17:20:53.204317 [INFO] [29] [T0] [LICENSE] License is OK.
+2023-12-12 17:20:58.553239 [INFO] [35] [T0] [88.0.104.1:56466:HTTP2-1#_AdminVHost] add child process pid: 60, procinfo: 0x2b554f0
+2023-12-12 17:21:45.304819 [INFO] [36] [T0] [Laravel] add child process pid: 67, procinfo: 0x2b4e5b0
+2023-12-12 17:21:52.005676 [INFO] [35] [T0] Process with PID: 60 is dead 
+2023-12-12 17:21:52.014846 [INFO] [36] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Error Timeout, restart and try again!
+2023-12-12 17:21:52.014977 [INFO] [36] [T0] [88.0.104.1:56468#Laravel] connection to [/tmp/lshttpd/lsphp-example.sock] on request #0, confirmed, 0, associated process: 67, running: 1, error: No such file or directory!
+2023-12-12 17:21:52.014981 [INFO] [36] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Connection refused, restart!
+2023-12-12 17:21:52.014982 [NOTICE] [36] [T0] Graceful stop process group lead by pid: 67
+2023-12-12 17:21:52.015203 [NOTICE] [36] [T0] All pending requests are finished, stop process group lead by pid: 67
+2023-12-12 17:21:52.015816 [INFO] [36] [T0] [Laravel] add child process pid: 69, procinfo: 0x2b5b100
+2023-12-12 17:21:52.305324 [INFO] [36] [T0] [88.0.104.1:56468-1#Laravel] File not found [/var/www/vhosts/laravel/public/img/favicon.ico] 
+2023-12-12 17:21:52.338435 [INFO] [36] [T0] [88.0.104.1:56468-2#Laravel] File not found [/var/www/vhosts/laravel/public/img/favicon.png] 

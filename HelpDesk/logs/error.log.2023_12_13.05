@@ -1,0 +1,74 @@
+2023-12-13 13:43:01.387547 [NOTICE] [T0] Your License key will expire in 14 days
+2023-12-13 13:43:01.387571 [NOTICE] [T0] Loading LiteSpeed/6.0.12 Enterprise ...
+2023-12-13 13:43:01.387578 [NOTICE] [T0] Using [BoringSSL]
+2023-12-13 13:43:01.391216 [NOTICE] [29] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7100
+2023-12-13 13:43:01.391274 [NOTICE] [29] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2023-12-13 13:43:01.391962 [NOTICE] [29] [T0] [config] chroot is disabled.
+2023-12-13 13:43:01.391981 [INFO] [29] [T0] old priority: 0, new priority: 0
+2023-12-13 13:43:01.392014 [INFO] [29] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2023-12-13 13:43:01.394111 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2023-12-13 13:43:01.394124 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2023-12-13 13:43:01.396744 [NOTICE] [29] [T0] start cgid: 32, /usr/local/lsws/bin/lscgid
+2023-12-13 13:43:01.397688 [NOTICE] [29] [T0] start cgid: 34, /usr/local/lsws/bin/httpd
+2023-12-13 13:43:01.399147 [INFO] [29] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2023-12-13 13:43:01.983900 [INFO] [29] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2023-12-13 13:43:01.984007 [INFO] [29] [T0] Add CloudFlare Subnets to trusted ACL ...
+2023-12-13 13:43:01.985853 [NOTICE] [29] [T0] [*:80] Add SO_REUSEPORT sockets, from #1 to #2
+2023-12-13 13:43:01.985899 [NOTICE] [29] [T0] The maximum number of file descriptor limit is set to 1048576.
+2023-12-13 13:43:01.988766 [NOTICE] [29] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2023-12-13 13:43:01.988802 [INFO] [29] [T0] [config:server:php] Try Litespeed PHP handlers
+2023-12-13 13:43:01.989071 [INFO] [29] [T0] Create PHP handler [lsphp81] with PHP binary [/usr/local/lsws/lsphp81/bin/lsphp]
+2023-12-13 13:43:01.989098 [INFO] [29] [T0] Add #1 suffix handler [lsphp81]->[lsphp81].
+2023-12-13 13:43:01.989104 [INFO] [29] [T0] Associate [php81] with PHP handler [lsphp81].
+2023-12-13 13:43:01.989114 [INFO] [29] [T0] Add #2 suffix handler [php81]->[lsphp81].
+2023-12-13 13:43:01.989138 [INFO] [29] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2023-12-13 13:43:01.990329 [INFO] [29] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php55,php73]
+2023-12-13 13:43:01.991827 [WARN] [29] [T0] [config:vhost:Laravel] Uid of /var/www/vhosts/laravel/ is smaller than minimum requirement 11, use server uid!
+2023-12-13 13:43:01.991837 [WARN] [29] [T0] [config:vhost:Laravel] Gid of /var/www/vhosts/laravel/ is smaller than minimum requirement 10, use server gid!
+2023-12-13 13:43:01.991842 [INFO] [29] [T0] [config:vhost:Laravel:logging] no separate logging set up.
+2023-12-13 13:43:01.993360 [NOTICE] [29] [T0] Litespeed is ready to serve...
+2023-12-13 13:43:01.993877 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=35 is forked!
+2023-12-13 13:43:01.994515 [NOTICE] [35] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 26
+2023-12-13 13:43:01.994536 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=36 is forked!
+2023-12-13 13:43:01.995257 [NOTICE] [36] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 27
+2023-12-13 13:43:01.995319 [INFO] [36] [T0] Stop listener *:7080.
+2023-12-13 13:43:02.397275 [INFO] [29] [T0] [LICENSE] License is OK.
+2023-12-13 13:43:01.995001 [NOTICE] [35] [T0] [Child: 35] Setup swapping space...
+2023-12-13 13:43:01.995063 [NOTICE] [35] [T0] Successfully change current user to nobody
+2023-12-13 13:43:01.995072 [NOTICE] [35] [T0] Core dump is enabled.
+2023-12-13 13:43:01.995380 [INFO] [35] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-13 13:43:01.995455 [INFO] [35] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-13 13:43:01.995531 [INFO] [35] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-13 13:43:01.995534 [ALERT] [35] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-13 13:43:01.995769 [NOTICE] [36] [T0] [Child: 36] Setup swapping space...
+2023-12-13 13:43:01.995910 [NOTICE] [36] [T0] Successfully change current user to nobody
+2023-12-13 13:43:01.995917 [NOTICE] [36] [T0] Core dump is enabled.
+2023-12-13 13:43:01.996164 [INFO] [36] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-13 13:43:01.996245 [INFO] [36] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-13 13:43:01.996309 [INFO] [36] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-13 13:43:01.996312 [ALERT] [36] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-13 13:43:06.040537 [INFO] [35] [T0] [Laravel] add child process pid: 60, procinfo: 0x1ed3a40
+2023-12-13 13:43:12.049729 [INFO] [35] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Error Timeout, restart and try again!
+2023-12-13 13:43:12.049906 [INFO] [35] [T0] [88.0.104.1:50887#Laravel] connection to [/tmp/lshttpd/lsphp-example.sock] on request #0, confirmed, 0, associated process: 60, running: 1, error: No such file or directory!
+2023-12-13 13:43:12.049911 [INFO] [35] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Connection refused, restart!
+2023-12-13 13:43:12.049913 [NOTICE] [35] [T0] Graceful stop process group lead by pid: 60
+2023-12-13 13:43:12.050234 [NOTICE] [35] [T0] All pending requests are finished, stop process group lead by pid: 60
+2023-12-13 13:43:12.050740 [INFO] [35] [T0] [Laravel] add child process pid: 62, procinfo: 0x1ed8390
+2023-12-13 13:53:02.107854 [NOTICE] [29] [T0] [146] [AutoUpdate] Checking for new releases...
+2023-12-13 13:53:02.108417 [INFO] [29] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2023-12-13 13:53:02.299781 [NOTICE] [29] [T0] [AutoUpdate] New release 6.2-ent is available, please update your installation.
+2023-12-13 13:53:06.131513 [NOTICE] [29] [T0] [147] Start to clean up cache directory.
+2023-12-13 14:10:56.872626 [INFO] [35] [T0] [45.56.108.128:46924#_AdminVHost] File not found [/usr/local/lsws/admin/html/b8tN] 
+2023-12-13 14:26:09.334549 [INFO] [35] [T0] [193.35.18.187:57670] Status 400: Bad Request URI, does not start with '/'
+2023-12-13 14:28:31.611156 [INFO] [36] [T0] [Laravel] add child process pid: 741, procinfo: 0x1ed8560
+2023-12-13 14:28:32.011957 [INFO] [36] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Error Timeout, restart and try again!
+2023-12-13 14:28:32.012194 [INFO] [36] [T0] [185.100.168.189:62667#Laravel] connection to [/tmp/lshttpd/lsphp-example.sock] on request #0, confirmed, 0, associated process: 741, running: 1, error: No such file or directory!
+2023-12-13 14:28:32.012199 [INFO] [36] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Connection refused, restart!
+2023-12-13 14:28:32.012201 [NOTICE] [36] [T0] Graceful stop process group lead by pid: 741
+2023-12-13 14:28:32.013054 [NOTICE] [36] [T0] All pending requests are finished, stop process group lead by pid: 741
+2023-12-13 14:28:32.014095 [INFO] [36] [T0] [Laravel] add child process pid: 743, procinfo: 0x1ed8030
+2023-12-13 15:18:56.690864 [INFO] [36] [T0] [139.59.101.104:37550#Laravel] File not found [/var/www/vhosts/laravel/cdn-cgi/trace] 
+2023-12-13 15:39:39.583960 [NOTICE] [36] [T0] [88.0.104.1:51123-3#Laravel] [STDERR] PHP Warning:  Undefined variable $html in /var/www/vhosts/laravel/controller/categoria.php on line 19\n
+2023-12-13 15:45:01.363248 [NOTICE] [36] [T0] [88.0.104.1:51144-2#Laravel] [STDERR] PHP Warning:  Undefined variable $html in /var/www/vhosts/laravel/controller/categoria.php on line 19\n
+2023-12-13 15:45:03.412011 [NOTICE] [36] [T0] [88.0.104.1:51144-6#Laravel:lsapi] [STDERR] PHP Warning:  Undefined variable $html in /var/www/vhosts/laravel/controller/categoria.php on line 19\n
+2023-12-13 15:45:06.485409 [NOTICE] [36] [T0] [88.0.104.1:51144-10#Laravel:lsapi] [STDERR] PHP Warning:  Undefined variable $html in /var/www/vhosts/laravel/controller/categoria.php on line 19\n

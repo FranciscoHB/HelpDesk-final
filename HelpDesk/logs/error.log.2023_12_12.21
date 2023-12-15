@@ -1,0 +1,93 @@
+2023-12-12 20:17:04.990647 [NOTICE] [T0] Your License key will expire in 14 days
+2023-12-12 20:17:04.990686 [NOTICE] [T0] Loading LiteSpeed/6.0.12 Enterprise ...
+2023-12-12 20:17:04.990693 [NOTICE] [T0] Using [BoringSSL]
+2023-12-12 20:17:04.993309 [NOTICE] [29] [T0] [ADMIN] server socket: uds://usr/local/lsws/admin/tmp/admin.sock.7486
+2023-12-12 20:17:04.993361 [NOTICE] [29] [T0] Loading configuration from /usr/local/lsws/conf/httpd_config.xml ...
+2023-12-12 20:17:04.994322 [NOTICE] [29] [T0] [config] chroot is disabled.
+2023-12-12 20:17:04.994347 [INFO] [29] [T0] old priority: 0, new priority: 0
+2023-12-12 20:17:04.994398 [INFO] [29] [T0] [config:server:basic] For better obscurity, server version number is hidden in the response header.
+2023-12-12 20:17:04.996830 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CloudLinux LVE is disabled.
+2023-12-12 20:17:04.996843 [INFO] [29] [T0] [/usr/local/lsws/bin/lscgid] CRIU is disabled.
+2023-12-12 20:17:04.997664 [NOTICE] [29] [T0] start cgid: 31, /usr/local/lsws/bin/lscgid
+2023-12-12 20:17:04.998577 [NOTICE] [29] [T0] start cgid: 33, /usr/local/lsws/bin/httpd
+2023-12-12 20:17:04.999838 [INFO] [29] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2023-12-12 20:17:05.572546 [INFO] [29] [T0] Add QUIC.cloud IPs from admin/conf/quic-cloud-ips to trusted ACL ...
+2023-12-12 20:17:05.572643 [INFO] [29] [T0] Add CloudFlare Subnets to trusted ACL ...
+2023-12-12 20:17:05.573463 [NOTICE] [29] [T0] [*:80] Add SO_REUSEPORT sockets, from #1 to #2
+2023-12-12 20:17:05.573506 [NOTICE] [29] [T0] The maximum number of file descriptor limit is set to 1048576.
+2023-12-12 20:17:05.575333 [NOTICE] [29] [T0] [config:server:rails] Cannot find ruby interpreter, Rails easy configuration is turned off
+2023-12-12 20:17:05.575374 [INFO] [29] [T0] [config:server:php] Try Litespeed PHP handlers
+2023-12-12 20:17:05.575559 [INFO] [29] [T0] Create PHP handler [lsphp81] with PHP binary [/usr/local/lsws/lsphp81/bin/lsphp]
+2023-12-12 20:17:05.575599 [INFO] [29] [T0] Add #1 suffix handler [lsphp81]->[lsphp81].
+2023-12-12 20:17:05.575607 [INFO] [29] [T0] Associate [php81] with PHP handler [lsphp81].
+2023-12-12 20:17:05.575620 [INFO] [29] [T0] Add #2 suffix handler [php81]->[lsphp81].
+2023-12-12 20:17:05.575642 [INFO] [29] [T0] [config:server:php] Try CloudLinux PHP selector handlers
+2023-12-12 20:17:05.575712 [INFO] [29] [T0] [config:server:php] cannot found a working PHP handler from list [php72,php71,php70,php56,php55,php73]
+2023-12-12 20:17:05.576704 [WARN] [29] [T0] [config:vhost:Laravel] Uid of /var/www/vhosts/laravel/ is smaller than minimum requirement 11, use server uid!
+2023-12-12 20:17:05.576715 [WARN] [29] [T0] [config:vhost:Laravel] Gid of /var/www/vhosts/laravel/ is smaller than minimum requirement 10, use server gid!
+2023-12-12 20:17:05.576720 [INFO] [29] [T0] [config:vhost:Laravel:logging] no separate logging set up.
+2023-12-12 20:17:05.577943 [NOTICE] [29] [T0] Litespeed is ready to serve...
+2023-12-12 20:17:05.578536 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=35 is forked!
+2023-12-12 20:17:05.579298 [NOTICE] [29] [T0] [AutoRestarter] new child process with pid=36 is forked!
+2023-12-12 20:17:05.579560 [NOTICE] [35] [T0] [*:80] Worker #1 activates socket SO_REUSEPORT #1, fd: 26
+2023-12-12 20:17:05.580451 [NOTICE] [36] [T0] [*:80] Worker #2 activates socket SO_REUSEPORT #2, fd: 27
+2023-12-12 20:17:05.580523 [INFO] [36] [T0] Stop listener *:7080.
+2023-12-12 20:17:05.988453 [INFO] [29] [T0] [LICENSE] License is OK.
+2023-12-12 20:17:05.580158 [NOTICE] [35] [T0] [Child: 35] Setup swapping space...
+2023-12-12 20:17:05.580238 [NOTICE] [35] [T0] Successfully change current user to nobody
+2023-12-12 20:17:05.580248 [NOTICE] [35] [T0] Core dump is enabled.
+2023-12-12 20:17:05.580688 [INFO] [35] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-12 20:17:05.580795 [INFO] [35] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-12 20:17:05.580879 [INFO] [35] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-12 20:17:05.580882 [ALERT] [35] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-12 20:17:05.581115 [NOTICE] [36] [T0] [Child: 36] Setup swapping space...
+2023-12-12 20:17:05.581309 [NOTICE] [36] [T0] Successfully change current user to nobody
+2023-12-12 20:17:05.581318 [NOTICE] [36] [T0] Core dump is enabled.
+2023-12-12 20:17:05.581679 [INFO] [36] [T0] [SSL_APK] created offloader with 2 workers.
+2023-12-12 20:17:05.581853 [INFO] [36] [T0] [MODSEC] created offloader with 10 workers.
+2023-12-12 20:17:05.581947 [INFO] [36] [T0] [MODSEC_BODY] created offloader with 50 workers.
+2023-12-12 20:17:05.581950 [ALERT] [36] [T0] LiteSpeed/6.0.12 Enterprise starts successfully!
+2023-12-12 20:17:08.707290 [INFO] [35] [T0] [88.0.104.1:56957:HTTP2-1#_AdminVHost] add child process pid: 60, procinfo: 0x2e640f0
+2023-12-12 20:17:22.829551 [INFO] [35] [T0] [Laravel] add child process pid: 64, procinfo: 0x2e6c150
+2023-12-12 20:17:25.032394 [INFO] [35] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Error Timeout, restart and try again!
+2023-12-12 20:17:25.033791 [INFO] [35] [T0] [88.0.104.1:56958#Laravel] connection to [/tmp/lshttpd/lsphp-example.sock] on request #0, confirmed, 0, associated process: 64, running: 1, error: No such file or directory!
+2023-12-12 20:17:25.033798 [INFO] [35] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Connection refused, restart!
+2023-12-12 20:17:25.033801 [NOTICE] [35] [T0] Graceful stop process group lead by pid: 64
+2023-12-12 20:17:25.034405 [NOTICE] [35] [T0] All pending requests are finished, stop process group lead by pid: 64
+2023-12-12 20:17:25.034976 [INFO] [35] [T0] [Laravel] add child process pid: 66, procinfo: 0x2e6c190
+2023-12-12 20:17:45.056338 [INFO] [35] [T0] Process with PID: 60 is dead 
+2023-12-12 20:18:39.720243 [INFO] [36] [T0] [Laravel] add child process pid: 79, procinfo: 0x2e59800
+2023-12-12 20:18:45.032119 [INFO] [36] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Error Timeout, restart and try again!
+2023-12-12 20:18:45.032288 [INFO] [36] [T0] [88.0.104.1:56967#Laravel] connection to [/tmp/lshttpd/lsphp-example.sock] on request #0, confirmed, 0, associated process: 79, running: 1, error: No such file or directory!
+2023-12-12 20:18:45.032292 [INFO] [36] [T0] [uds://tmp/lshttpd/lsphp-example.sock] Connection refused, restart!
+2023-12-12 20:18:45.032294 [NOTICE] [36] [T0] Graceful stop process group lead by pid: 79
+2023-12-12 20:18:45.032532 [NOTICE] [36] [T0] All pending requests are finished, stop process group lead by pid: 79
+2023-12-12 20:18:45.033119 [INFO] [36] [T0] [Laravel] add child process pid: 81, procinfo: 0x2e5a330
+2023-12-12 20:21:30.075133 [INFO] [35] [T0] [88.0.104.1:57002#Laravel] File not found [/var/www/vhosts/laravel/vistas/perfil/home.js] 
+2023-12-12 20:22:15.370106 [NOTICE] [36] [T0] [88.0.104.1:57012-3#Laravel] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/logout/logout.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/logout/logout.php on line 7\n
+2023-12-12 20:22:17.481623 [NOTICE] [36] [T0] [88.0.104.1:57012-4#Laravel:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/logout/logout.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/logout/logout.php on line 7\n
+2023-12-12 20:22:19.233177 [NOTICE] [36] [T0] [88.0.104.1:57012-5#Laravel:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/logout/logout.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/logout/logout.php on line 7\n
+2023-12-12 20:22:20.058201 [NOTICE] [36] [T0] [88.0.104.1:57012-6#Laravel:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/home/index.php:109\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/home/index.php on line 109\n
+2023-12-12 20:22:20.571053 [NOTICE] [36] [T0] [88.0.104.1:57012-7#Laravel:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/home/index.php:109\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/home/index.php on line 109\n
+2023-12-12 20:22:21.852149 [NOTICE] [36] [T0] [88.0.104.1:57012-8#Laravel:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/consultar_entrada/index.php:80\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/consultar_entrada/index.php on line 80\n
+2023-12-12 20:22:23.197109 [NOTICE] [36] [T0] [88.0.104.1:57012-9#Laravel:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/consultar_entrada/index.php:80\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/consultar_entrada/index.php on line 80\n
+2023-12-12 20:27:06.103162 [NOTICE] [29] [T0] [163] [AutoUpdate] Checking for new releases...
+2023-12-12 20:27:06.103815 [INFO] [29] [T0] Download QUIC.cloud whitelist IP to admin/tmp/download-quic-cloud-ips ...
+2023-12-12 20:27:06.292485 [NOTICE] [29] [T0] [AutoUpdate] New release 6.2-ent is available, please update your installation.
+2023-12-12 20:27:06.695826 [NOTICE] [29] [T0] [164] Start to clean up cache directory.
+2023-12-12 20:30:34.832232 [NOTICE] [36] [T0] [88.0.104.1:57103-1#Laravel] [STDERR] PHP Warning:  Undefined variable $html in /var/www/vhosts/laravel/controller/categoria.php on line 19\n
+2023-12-12 20:31:26.621914 [INFO] [36] [T0] [88.0.104.1:57110-1#Laravel] File not found [/var/www/vhosts/laravel/vistas/perfil/home.js] 
+2023-12-12 20:33:40.184243 [NOTICE] [35] [T0] [88.0.104.1:57131-1#Laravel] [STDERR] PHP Warning:  Undefined variable $html in /var/www/vhosts/laravel/controller/categoria.php on line 19\n
+2023-12-12 20:33:49.770654 [NOTICE] [35] [T0] [88.0.104.1:57131-5#Laravel:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/logout/logout.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/logout/logout.php on line 7\n
+2023-12-12 20:33:51.882369 [NOTICE] [35] [T0] [88.0.104.1:57131-6#Laravel:lsapi] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/logout/logout.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/logout/logout.php on line 7\n
+2023-12-12 20:35:23.636731 [INFO] [35] [T0] [95.214.235.169:58524#Laravel] File not found [/var/www/vhosts/laravel/.env] 
+2023-12-12 20:37:41.177057 [INFO] [36] [T0] [88.0.104.1:57158-1#Laravel] File not found [/var/www/vhosts/laravel/vistas/perfil/home.js] 
+2023-12-12 20:39:09.536078 [NOTICE] [36] [T0] [88.0.104.1:57163-5#Laravel] [STDERR] PHP Warning:  Undefined variable $html in /var/www/vhosts/laravel/controller/categoria.php on line 19\n
+2023-12-12 20:39:56.175356 [NOTICE] [35] [T0] [88.0.104.1:57166-1#Laravel] [STDERR] PHP Warning:  Undefined variable $html in /var/www/vhosts/laravel/controller/categoria.php on line 19\n
+2023-12-12 20:39:59.021643 [INFO] [35] [T0] [88.0.104.1:57166-4#Laravel] File not found [/var/www/vhosts/laravel/vistas/perfil/home.js] 
+2023-12-12 20:42:31.859812 [NOTICE] [36] [T0] [88.0.104.1:57180-1#Laravel] [STDERR] PHP Warning:  Undefined variable $html in /var/www/vhosts/laravel/controller/categoria.php on line 19\n
+2023-12-12 20:43:17.728990 [INFO] [36] [T0] [88.0.104.1:57185-1#Laravel] File not found [/var/www/vhosts/laravel/vistas/perfil/home.js] 
+2023-12-12 20:43:25.207352 [NOTICE] [36] [T0] [88.0.104.1:57187#Laravel] [STDERR] PHP Fatal error:  Uncaught Error: Non-static method conectar::ruta() cannot be called statically in /var/www/vhosts/laravel/vistas/logout/logout.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/vhosts/laravel/vistas/logout/logout.php on line 7\n
+2023-12-12 21:24:23.377939 [INFO] [36] [T0] [193.35.18.187:37820] Status 400: Bad Request URI, does not start with '/'
+2023-12-12 21:32:29.181328 [INFO] [35] [T0] [162.216.150.182:61412#_AdminVHost] add child process pid: 975, procinfo: 0x2e640f0
+2023-12-12 21:33:05.002189 [INFO] [35] [T0] Process with PID: 975 is dead 
